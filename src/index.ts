@@ -1,6 +1,5 @@
 import dotenv from "dotenv";
 import express from "express";
-import path from "path";
 
 import "reflect-metadata";
 
@@ -9,7 +8,7 @@ import { Photo } from "./entity/Photo";
 import bodyParser from "body-parser";
 
 // initialize configuration
-// dotenv.config();
+dotenv.config();
 
 const app = express();
 const port = process.env.SERVER_PORT || 8080; // default port to listen
